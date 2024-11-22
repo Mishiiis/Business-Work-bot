@@ -6,10 +6,11 @@ from telebot import types
 from datetime import datetime, timedelta
 from apscheduler.schedulers.blocking import BlockingScheduler
 from threading import Thread
+from settings import TG_TOKEN
 
 
 # Создать экземпляр бота
-bot = telebot.TeleBot("7798377989:AAF8GcsIxXQct3S2GRhGkQvTjjzaj0zWP6Q")
+bot = telebot.TeleBot(TG_TOKEN)
 
 # Id проектных менеджеров
 managersid = [1059219533, 5149703369, 498357388]
